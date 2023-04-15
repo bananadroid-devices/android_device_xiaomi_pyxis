@@ -11,6 +11,37 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Banana stuff.
 $(call inherit-product, vendor/banana/config/common.mk)
 
+# Target Boot Animation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# GApps Build
+WITH_GAPPS := false
+
+# Core GApps, WITH_GAPPS needs to be true
+BUILD_CORE_GAPPS := false
+
+# Core GApps Extras
+BUILD_CORE_GAPPS_EXTRA := false
+
+# Additional features for full GApps build
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := false
+
+# Specific maintainer
+BANANA_MAINTAINER := DeadSomeOne
+
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# Device UDFPS
+TARGET_HAS_UDFPS := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Default build has Matlog, disable it with this flag
+TARGET_EXCLUDE_MATLOG := true
+
 # Inherit from pyxis device
 $(call inherit-product, device/xiaomi/pyxis/device.mk)
 
