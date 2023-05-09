@@ -32,4 +32,7 @@
 
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
+
+    <!-- Battery Health -->
+    <bool name="config_supportBatteryHealth">true</bool>
 </resources>
