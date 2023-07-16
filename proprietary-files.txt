@@ -328,3 +328,8 @@ vendor/etc/thermal-engine-sdm710-sgame.conf
 vendor/etc/thermal-engine-sdm710-tgame.conf
 vendor/etc/thermal-engine-sdm710.conf
 vendor/etc/thermal-engine.conf
+
+# IMS
+vendor/lib64/lib-rcsconfig.so
+vendor/lib64/vendor.qti.ims.callcapability@1.0.so
+vendor/lib64/vendor.qti.ims.factory@1.0.so
